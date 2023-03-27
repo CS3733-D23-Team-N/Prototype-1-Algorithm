@@ -1,4 +1,4 @@
-package edu.wpi.teamname.controllers;
+package edu.wpi.niftynymphs.controllers;
 
 import javafx.fxml.FXML;
 

@@ -1,7 +1,7 @@
-package edu.wpi.teamname.controllers;
+package edu.wpi.niftynymphs.controllers;
 
-import edu.wpi.teamname.navigation.Navigation;
-import edu.wpi.teamname.navigation.Screen;
+import edu.wpi.niftynymphs.navigation.Navigation;
+import edu.wpi.niftynymphs.navigation.Screen;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import javafx.fxml.FXML;
 

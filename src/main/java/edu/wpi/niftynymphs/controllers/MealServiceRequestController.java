@@ -5,7 +5,7 @@ import edu.wpi.niftynymphs.navigation.Screen;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import javafx.fxml.FXML;
 
-public class ServiceRequestController {
+public class MealServiceRequestController {
 
   @FXML MFXButton backButton;
 

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e7EBEF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label prefHeight="40.0" prefWidth="205.0" text="Meal Delivery">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="16.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="356.0" style="-fx-background-color: white; -fx-border-radius: 16;">
+               <graphic>
+                  <VBox spacing="4.0">
+                     <children>
+                        <Label text="Pizza">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Cheese, sausage, peporoni, and more!">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic></Button>
+            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="356.0" style="-fx-background-color: white; -fx-border-radius: 16;">
+               <graphic>
+                  <VBox spacing="4.0">
+                     <children>
+                        <Label text="Pasta">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Tomato sauce, parmesan">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="356.0" style="-fx-background-color: white; -fx-border-radius: 16;">
+               <graphic>
+                  <VBox spacing="4.0">
+                     <children>
+                        <Label text="Chocolate Cake">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Dieticians hate this one simple trick">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #0F2C57;" text="Submit" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="280.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+   </padding>
+</VBox>

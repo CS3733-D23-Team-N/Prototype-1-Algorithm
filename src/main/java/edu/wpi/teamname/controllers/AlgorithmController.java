@@ -106,9 +106,9 @@ public class AlgorithmController {
         queue.add(n);
         visited.add(n);
 
-        ArrayList<Node> path = new ArrayList<>();
-        path.add(n);
-        queuePaths.add(path);
+        ArrayList<Node> tempPath = new ArrayList<>();
+        tempPath.add(n);
+        queuePaths.add(tempPath);
         break;
       }
     }
@@ -122,22 +122,20 @@ public class AlgorithmController {
         if (n.getLongName().equals(endNodeLongName)) {
           currPath.add(n);
           return currPath;
-        } else if (!visited.contains(currNode)) {
+        } else if (!visited.contains(n)) {
 
           // add the current node to both visited and queue arrayLists
-          visited.add(currNode);
-          queue.add(currNode);
+          visited.add(n);
+          queue.add(n);
 
-          // update the current path with the current node, add it to the paths arrayList, then
-          // remove it to be used again.
-          currPath.add(n);
-          queuePaths.add(currPath);
-          currPath.remove(n);
+          // update the current path with the current node, add it to the paths arrayList
+          ArrayList<Node> tempList = new ArrayList<>(currPath);
+          tempList.add(n);
+          queuePaths.add(tempList);
         }
       }
     }
 
-    System.out.println("Either the starting node or ending node was not in the map.");
     return null;
   }
 

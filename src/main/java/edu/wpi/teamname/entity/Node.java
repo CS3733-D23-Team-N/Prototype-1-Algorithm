@@ -34,4 +34,34 @@ public class Node {
   public void addAdjacent(Node n) {
     adjacentNodes.add(n);
   }
+
+  @Override
+  public String toString() {
+    return "Node{"
+        + "id='"
+        + id
+        + '\''
+        + ", floor='"
+        + floor
+        + '\''
+        + ", building='"
+        + building
+        + '\''
+        + ", nodeType='"
+        + nodeType
+        + '\''
+        + ", longName='"
+        + longName
+        + '\''
+        + ", shortName='"
+        + shortName
+        + '\''
+        + ", xCoord="
+        + xCoord
+        + ", yCoord="
+        + yCoord
+        + ", adjacentNodes="
+        + adjacentNodes.size()
+        + '}';
+  }
 }

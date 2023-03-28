@@ -62,10 +62,15 @@ public class AlgorithmCLI {
         }
       }
 
-      // print solution path
-      System.out.println("Path from starting to ending node: ");
-      for (Node n : solutionPath) {
-        System.out.println(n.getLongName());
+      if (solutionPath == null) {
+        System.out.println("No valid path found between these nodes.");
+
+      } else {
+        // print solution path
+        System.out.println("Path from starting to ending node: ");
+        for (Node n : solutionPath) {
+          System.out.println(n.getLongName());
+        }
       }
 
       System.out.println("Would you like to run again? (Y/N)");

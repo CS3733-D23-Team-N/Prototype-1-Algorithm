@@ -54,6 +54,4 @@ public class AlgorithmTester {
     assertFalse(controller.nodeExists("asldfjhwop4iu;adsfj"));
   }
 
-  @Test
-    public void testBFS
 }

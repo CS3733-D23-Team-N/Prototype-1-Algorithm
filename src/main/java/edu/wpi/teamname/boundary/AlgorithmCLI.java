@@ -42,8 +42,7 @@ public class AlgorithmCLI {
       System.out.println(
           "Which algorithm would you like to use? \n"
               + "1: Breadth First Search \n"
-              + "2: Depth First Search \n"
-              + "3: A* Search \n");
+              + "2: A* Search \n");
       while (!finished) {
         String choice = reader.nextLine();
 
@@ -53,8 +52,7 @@ public class AlgorithmCLI {
             finished = true;
             break;
           case "2":
-          case "3":
-            // TODO: replace with actual references to these algorithms when they are implemented
+            // TODO: replace with reference to aStar when it is implemented
             System.out.println("This algorithm has not been implemented yet. Please try again.");
             break;
           default:

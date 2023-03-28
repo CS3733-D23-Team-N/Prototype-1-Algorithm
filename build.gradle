@@ -64,6 +64,7 @@ dependencies {
             'org.hibernate:hibernate-c3p0:6.1.6.Final',
             'com.jfoenix:jfoenix:9.0.10',
     )
+    implementation 'junit:junit:4.13.1'
 
     String javaFxVersion = "19"
     implementation group: 'org.openjfx', name: 'javafx-base', version: javaFxVersion, classifier: 'win'

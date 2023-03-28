@@ -11,14 +11,20 @@ import javafx.scene.layout.GridPane;
 public class RootController {
 
   // Panes
-  @FXML GridPane outerGridPane;
-  @FXML GridPane innerGridPane;
-  @FXML BorderPane innerBorderPane;
+  @FXML
+  GridPane outerGridPane;
+  @FXML
+  GridPane innerGridPane;
+  @FXML
+  BorderPane innerBorderPane;
 
   // Images in nav bar
-  @FXML ImageView homeLogo;
-  @FXML ImageView helpIcon;
-  @FXML ImageView exitIcon;
+  @FXML
+  ImageView homeLogo;
+  @FXML
+  ImageView helpIcon;
+  @FXML
+  ImageView exitIcon;
 
   @FXML
   public void navigateHome() {
@@ -36,5 +42,7 @@ public class RootController {
   }
 
   @FXML
-  public void initialize() {}
+  public void initialize() {
+    Navigation.setNavContainer(innerBorderPane);
+  }
 }

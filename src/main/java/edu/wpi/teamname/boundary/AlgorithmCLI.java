@@ -52,8 +52,8 @@ public class AlgorithmCLI {
             finished = true;
             break;
           case "2":
-            // TODO: replace with reference to aStar when it is implemented
-            System.out.println("This algorithm has not been implemented yet. Please try again.");
+            solutionPath = aController.aStarSearch(node1, node2);
+            finished = true;
             break;
           default:
             System.out.println("This is not a recognized choice. Please try again.");

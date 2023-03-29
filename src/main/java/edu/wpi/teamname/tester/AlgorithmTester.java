@@ -53,5 +53,4 @@ public class AlgorithmTester {
   public void testNodeDoesntExistRandom() {
     assertFalse(controller.nodeExists("asldfjhwop4iu;adsfj"));
   }
-
 }

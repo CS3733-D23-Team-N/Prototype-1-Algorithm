@@ -42,7 +42,7 @@ public class AlgorithmCLI {
       System.out.println(
           "Which algorithm would you like to use? \n"
               + "1: Breadth First Search \n"
-              + "2: A* Search \n");
+              + "2: A* Search");
       while (!finished) {
         String choice = reader.nextLine();
 
@@ -61,17 +61,17 @@ public class AlgorithmCLI {
       }
 
       if (solutionPath == null) {
-        System.out.println("No valid path found between these nodes.");
+        System.out.println("\nNo valid path found between these nodes.");
 
       } else {
         // print solution path
-        System.out.println("Path from starting to ending node: ");
+        System.out.println("\nPath from starting to ending node: ");
         for (Node n : solutionPath) {
           System.out.println(n.getLongName());
         }
       }
 
-      System.out.println("Would you like to run again? (Y/N)");
+      System.out.println("\nWould you like to run again? (Y/N)");
       if (reader.nextLine().toUpperCase().charAt(0) != 'Y') {
         System.out.println("Thank you for using the hospital pathfinding proof of concept.");
         break;
